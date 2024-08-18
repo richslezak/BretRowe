@@ -1,1 +1,1 @@
-# Web Site for the late artist Bret Rowe
+# Website for the late artist Bret Rowe
