@@ -18,9 +18,18 @@
   color: var(--color-black-dark);
 }
 
+.nav-bret a::after {
+  content: '';
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  z-index: -1;
+  background-color: var(--color-white);
+}
+
 .tooltip {
   position: absolute;
-  color: var(--color-white);
+  color: var(--color-black-dark);
   font-size: 0.6em;
   max-width: 200px;
   text-align: center;
@@ -30,7 +39,7 @@
   /* triangle dimension */
   --b: 1em; /* control the base */
   --h: 0.7em; /* control the height */
-  --c: var(--color-black-dark);
+  --c: var(--color-white);
 }
 
 /* TOP LEFT */
@@ -39,12 +48,18 @@
   background-position: bottom right;
 }
 
+.top-left::after {
+  bottom: 0;
+  right: 0;
+}
+
 .top-left:hover {
   background-image: url(/img/nav-bret/top-left-hover.webp);
 }
 
 .top-left:hover .tooltip {
   --c: var(--color-code-dark);
+  color: var(--color-white);
 }
 
 .top-left .tooltip {
@@ -71,13 +86,17 @@
   background-position: bottom left;
 }
 
+.top-right::after {
+  bottom: 0;
+  left: 0;
+}
+
 .top-right:hover {
   background-image: url(/img/nav-bret/top-right-hover.webp);
 }
 
 .top-right:hover .tooltip {
   --c: var(--color-gray-medium);
-  color: var(--color-black-dark);
 }
 
 .top-right .tooltip {
@@ -104,13 +123,17 @@
   background-position: top right;
 }
 
+.bottom-left::after {
+  top: 0;
+  right: 0;
+}
+
 .bottom-left:hover {
   background-image: url(/img/nav-bret/bottom-left-hover.webp);
 }
 
 .bottom-left:hover .tooltip {
   --c: var(--color-gray-medium);
-  color: var(--color-black-dark);
 }
 
 .bottom-left .tooltip {
@@ -136,12 +159,18 @@
   background-position: top left;
 }
 
+.bottom-right::after {
+  top: 0;
+  left: 0;
+}
+
 .bottom-right:hover {
   background-image: url(/img/nav-bret/bottom-right-hover.webp);
 }
 
 .bottom-right:hover .tooltip {
   --c: var(--color-code-dark);
+  color: var(--color-white);
 }
 
 .bottom-right .tooltip {
@@ -170,12 +199,15 @@
   .top-left .tooltip {
     right: 60px;
   }
+
   .top-right .tooltip {
     left: 90px;
   }
+
   .bottom-left .tooltip {
     right: 100px;
   }
+
   .bottom-right .tooltip {
     left: 70px;
   }
@@ -192,6 +224,11 @@
     background-size: 150px;
   }
 
+  .nav-bret a::after {
+    width: 153px;
+    height: 153px;
+  }
+
   .tooltip {
     font-size: 0.75em;
   }
@@ -199,12 +236,15 @@
   .top-left .tooltip {
     right: 75px;
   }
+
   .top-right .tooltip {
     left: 130px;
   }
+
   .bottom-left .tooltip {
     right: 130px;
   }
+
   .bottom-right .tooltip {
     left: 90px;
   }
@@ -221,6 +261,11 @@
     background-size: 180px;
   }
 
+  .nav-bret a::after {
+    width: 184px;
+    height: 184px;
+  }
+
   .tooltip {
     font-size: 0.85em;
   }
@@ -228,12 +273,15 @@
   .top-left .tooltip {
     right: 110px;
   }
+
   .top-right .tooltip {
     left: 160px;
   }
+
   .bottom-left .tooltip {
     right: 160px;
   }
+
   .bottom-right .tooltip {
     left: 120px;
   }
@@ -250,6 +298,11 @@
     background-size: 210px;
   }
 
+  .nav-bret a::after {
+    width: 215px;
+    height: 215px;
+  }
+
   .tooltip {
     font-size: 0.9em;
   }
@@ -259,12 +312,15 @@
     left: 0;
     width: 170px;
   }
+
   .top-right .tooltip {
     left: 160px;
   }
+
   .bottom-left .tooltip {
     right: 160px;
   }
+
   .bottom-right .tooltip {
     left: 250px;
     bottom: 110px;
