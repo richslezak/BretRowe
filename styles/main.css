@@ -10,15 +10,12 @@
   --color-secondary: #377f31;
   --color-secondary-dark: #2c6327;
   --color-code: #dd1144;
-  --color-code-dark: #df0031;
   --color-highlight: #fbf9c9;
   --color-black: #272727;
-  --color-black-dark: #000400;
   --color-white: #ffffff;
   --color-gray-dark: #808080;
   --color-gray-darker: #555555;
-  /* --color-gray-medium: #b8b8b8; */
-  --color-gray-medium: #c7c6c6;
+  --color-gray-medium: #b8b8b8;
   --color-gray-light: #e5e5e5;
   --color-gray-lighter: #f7f7f7;
   /* Fonts */

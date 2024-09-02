@@ -5,21 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bret Rowe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/custom.css">
   <link rel="stylesheet" href="styles/nav-bret.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const dateElement = document.getElementById('date');
+      const today = new Date();
+      const formattedDate = today.getFullYear();
+      dateElement.textContent = formattedDate;
+    });
+  </script>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Bret Rowe</h1>
-    <nav class="nav-bret">
-      <a href="bio.html" class="top-left"><span class="tooltip">Who is Bret Rowe?</span></a>
-      <a href="/collections/index.html" class="top-right"><span class="tooltip">Brets Art</span></a>
-      <a href="contact.html" class="bottom-left"><span class="tooltip">Contact</span></a>
-      <a href="artist-statement.html" class="bottom-right"><span class="tooltip">Artist Statement</span></a>
-    </nav>
-  </div>
+  <header>
+    <div class="container">
+      <h1 class="brand">Bret Rowe</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <nav class="nav-bret">
+        <a href="bio.html" class="top-left"><span class="tooltip">Who is Bret Rowe?</span></a>
+        <a href="/collections/index.html" class="top-right"><span class="tooltip">Brets Art</span></a>
+        <a href="contact.html" class="bottom-left"><span class="tooltip">Contact</span></a>
+        <a href="artist-statement.html" class="bottom-right"><span class="tooltip">Artist Statement</span></a>
+      </nav>
+    </div>
+  </main>
+  <footer class="fixed">
+    <div class="container">
+      <p>&copy; <span id="date"></span>
+        <span class="brand">Bret Rowe</span>
+        <span class="legal-text">- All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
