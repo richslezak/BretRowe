@@ -38,6 +38,14 @@
 
 body {
   background-color: var(--color-black);
+  background-image: url(/img/rebel.png);
+  background-repeat: repeat;
+  /* background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px; */
   color: var(--color-white);
   font-optical-sizing: auto;
   font-weight: 400;
@@ -56,10 +64,21 @@ h6 {
   font-weight: 600;
 }
 
+main {
+  margin-bottom: 5em;
+}
+
 .brand {
   text-transform: uppercase;
   color: var(--color-code);
   font-weight: 800;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--color-code);
+  font-weight: 400;
+  letter-spacing: 0.6em;
 }
 
 header .brand {
@@ -72,10 +91,46 @@ header .brand {
 footer {
   margin-top: auto;
   border-top: 1px solid var(--color-code);
+  background-color: var(--color-black);
+}
+
+footer .flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.75em;
+}
+
+footer .flex-row > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: var(--spacing) 0;
+}
+
+footer nav li + li {
+  padding-left: 0.5em;
+}
+
+footer nav li + li::before {
+  content: '|';
+  padding-right: 0.3em;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+footer nav a:hover {
+  color: var(--color-code);
 }
 
 footer p {
-  font-size: 0.75em;
   margin: var(--spacing) 0;
 }
 
@@ -108,6 +163,22 @@ footer p {
 
 /* 640px */
 @media (min-width: 40em) {
+}
+
+/* 680px */
+@media (min-width: 42.5em) {
+  footer .flex-row > * {
+    width: 50%;
+  }
+  footer .order-1 {
+    order: 1 !important;
+  }
+  footer .order-2 {
+    order: 2 !important;
+  }
+  footer nav {
+    float: right;
+  }
 }
 
 /* 960px */
