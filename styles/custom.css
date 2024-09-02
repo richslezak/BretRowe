@@ -78,7 +78,7 @@ main {
   text-transform: uppercase;
   color: var(--color-code);
   font-weight: 400;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.2em;
 }
 
 header .brand {
@@ -159,6 +159,9 @@ footer p {
 
 /* 480px */
 @media (min-width: 30em) {
+  .title {
+    letter-spacing: 0.6em;
+  }
 }
 
 /* 640px */
