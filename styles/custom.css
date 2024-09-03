@@ -68,6 +68,10 @@ main {
   margin-bottom: 5em;
 }
 
+section {
+  margin-bottom: 5em;
+}
+
 .brand {
   text-transform: uppercase;
   color: var(--color-code);
@@ -79,6 +83,11 @@ main {
   color: var(--color-code);
   font-weight: 400;
   letter-spacing: 0.2em;
+}
+
+#bio-video {
+  margin: 0.5em 0 2em;
+  border: 5px solid white;
 }
 
 header .brand {
@@ -184,10 +193,26 @@ footer p {
   }
 }
 
+/* 768px */
+@media (min-width: 48em) {
+  #bio-video {
+    width: 350px;
+    margin: 0.5em 0 3em 3em;
+    float: right;
+  }
+
+  #bio-video ~ p:nth-of-type(-n + 3) {
+    text-align: justify;
+  }
+}
+
 /* 960px */
 @media (min-width: 60em) {
   header .brand {
     font-size: 3em;
+  }
+  #bio-video {
+    width: 450px;
   }
 }
 
