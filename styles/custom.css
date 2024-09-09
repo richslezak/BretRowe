@@ -1,3 +1,7 @@
+@import url(/styles/main.css);
+@import url(/styles/nav.css);
+@import url(/styles/theme.css);
+
 /* Overide the defaults in main.css */
 :root {
   /* Colors */
@@ -10,37 +14,9 @@
   --font-comic-neue: 'Comic Neue', cursive;
 }
 
-/* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 100 to 900 
-
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-*/
-
-/* .montserrat-regular {
-  font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.montserrat-semibold {
-  font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-} */
-
 body {
-  background-color: var(--color-black);
-  background-image: url(/img/rebel.png);
-  background-repeat: repeat;
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -66,20 +42,21 @@ section {
   margin-bottom: 5em;
 }
 
-.btn {
-  background-color: var(--color-white);
+button {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
   color: var(--color-black);
+  background-color: transparent;
+  border: 0;
 }
 
-.btn {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-white);
-  color: var(--color-black);
-}
 .btn,
 .btn:focus,
 .btn:visited {
-  color: var(--color-black);
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
+  color: var(--color-white);
 }
 .btn:hover,
 .btn:active {
@@ -99,45 +76,6 @@ section {
   color: var(--color-code);
   font-weight: 400;
   letter-spacing: 0.2em;
-}
-
-#bio-video {
-  margin: 0.5em 0 2em;
-  border: 5px solid white;
-}
-
-.navbar {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar .brand {
-  font-size: 0.75em;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
-.navbar ul {
-  font-size: 0.75em;
-  margin-bottom: 0;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: var(--color-white);
-}
-
-.navbar a:hover {
-  color: var(--color-code);
-}
-
-.navbar a.active {
-  border-bottom: 1px solid var(--color-code);
 }
 
 header {
@@ -178,7 +116,7 @@ footer nav li + li::before {
 
 footer nav a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 footer nav a:hover {
@@ -189,8 +127,43 @@ footer p {
   margin: var(--spacing) 0;
 }
 
+#bio-video {
+  margin: 0.5em 0 2em;
+  border: 5px solid var(--color-gray-medium);
+}
+
+#artist-statement-picture {
+  margin: 0.5em 0 2em;
+  border: 5px solid var(--color-gray-medium);
+}
+
+#contact a {
+  color: var(--color-black);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#contact a:hover {
+  color: var(--color-code);
+}
+
+#contact a > svg {
+  margin-right: 0.5em;
+}
+
 /* 400px */
 @media (min-width: 25em) {
+  #artist-statement-picture {
+    width: 150px;
+    margin: 0.5em 0 3em 3em;
+    float: right;
+  }
+
+  #artist-statement-picture ~ p:nth-of-type(-n + 3) {
+    text-align: justify;
+  }
 }
 
 /* 480px */
@@ -198,29 +171,20 @@ footer p {
   .title {
     letter-spacing: 0.6em;
   }
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .navbar .brand {
-    display: inline-block;
-  }
 }
 
 /* 640px */
 @media (min-width: 40em) {
-  .navbar .brand {
-    font-size: 1.2em;
-  }
-
-  .navbar ul {
-    font-size: 1em;
+  #contact p {
+    margin-right: 3em;
   }
 }
 
 /* 680px */
 @media (min-width: 42.5em) {
+  #artist-statement-picture {
+    width: 250px;
+  }
   footer .flex-row > * {
     width: 50%;
   }
@@ -256,6 +220,10 @@ footer p {
 
   #bio-video ~ p:nth-of-type(-n + 3) {
     text-align: justify;
+  }
+
+  #artist-statement-picture {
+    width: 300px;
   }
 }
 

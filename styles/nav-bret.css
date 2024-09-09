@@ -1,39 +1,4 @@
-/* .comic-neue-light {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.comic-neue-regular {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.comic-neue-bold {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.comic-neue-light-italic {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.comic-neue-regular-italic {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.comic-neue-bold-italic {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: italic;
-} */
-
+/* Four square navigation on home page  */
 .nav-bret {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -55,7 +20,6 @@
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
-  color: var(--color-black);
 }
 
 .nav-bret a::after {
@@ -64,7 +28,7 @@
   width: 112px;
   height: 112px;
   z-index: -1;
-  background-color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 .nav-bret a:hover .tooltip {
@@ -84,7 +48,7 @@
   /* triangle dimension */
   --b: 1em; /* control the base */
   --h: 0.7em; /* control the height */
-  --c: var(--color-white);
+  --c: var(--color-gray-medium);
 }
 
 /* TOP LEFT */
@@ -101,11 +65,6 @@
 .top-left:hover {
   background-image: url(/img/nav-bret/top-left-hover.webp);
 }
-
-/* .top-left:hover .tooltip {
-  --c: var(--color-code);
-  color: var(--color-white);
-} */
 
 .top-left .tooltip {
   top: 0;
@@ -140,10 +99,6 @@
   background-image: url(/img/nav-bret/top-right-hover.webp);
 }
 
-/* .top-right:hover .tooltip {
-  --c: var(--color-gray-medium);
-} */
-
 .top-right .tooltip {
   top: 0;
   left: 70px;
@@ -177,10 +132,6 @@
   background-image: url(/img/nav-bret/bottom-left-hover.webp);
 }
 
-/* .bottom-left:hover .tooltip {
-  --c: var(--color-gray-medium);
-} */
-
 .bottom-left .tooltip {
   bottom: 0;
   right: 80px;
@@ -212,11 +163,6 @@
 .bottom-right:hover {
   background-image: url(/img/nav-bret/bottom-right-hover.webp);
 }
-
-/* .bottom-right:hover .tooltip {
-  --c: var(--color-code);
-  color: var(--color-white);
-} */
 
 .bottom-right .tooltip {
   bottom: 0;

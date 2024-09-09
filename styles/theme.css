@@ -1,0 +1,99 @@
+/* Theme Toggler */
+.sun {
+  fill: var(--color-black);
+}
+.moon {
+  fill: transparent;
+}
+
+.dark .sun {
+  fill: transparent;
+}
+.dark .moon {
+  fill: var(--color-white);
+}
+
+/* Default theme is based on light and found in custom.css */
+/* Overides for dark them follow */
+
+/* Body */
+.dark body {
+  background-color: var(--color-black);
+  background-image: url(/img/rebel.png);
+  background-repeat: repeat;
+  color: var(--color-white);
+}
+
+/* Buttons */
+.dark button {
+  color: var(--color--white);
+}
+
+.dark .btn,
+.dark .btn:focus,
+.dark .btn:visited {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  color: var(--color-black);
+}
+.dark .btn:hover,
+.dark .btn:active {
+  background-color: var(--color-code);
+  border-color: var(--color-code);
+  color: var(--color-white);
+}
+
+/* Video */
+.dark #bio-video {
+  border-color: var(--color-white);
+}
+
+/* Artist statement picture */
+.dark #artist-statement-picture {
+  border-color: var(--color-white);
+}
+
+/* Contact Links */
+.dark #contact a {
+  color: var(--color-white);
+}
+
+.dark #contact a:hover {
+  color: var(--color-code);
+}
+
+/* Footer nav */
+.dark footer nav a {
+  color: var(--color-white);
+}
+
+.dark footer nav a:hover {
+  color: var(--color-code);
+}
+
+/* Overides for nav.css */
+/* Navlinks a */
+.dark .nav-links a {
+  color: var(--color-white);
+}
+
+.dark .nav-links a:hover {
+  color: var(--color-code);
+}
+
+/* 767 */
+@media (max-width: 47.938em) {
+  /* Nav-links */
+  .dark .nav-links {
+    background-color: var(--color-black);
+  }
+}
+
+/* Overides for nav-bret.css */
+.dark .nav-bret a::after {
+  background-color: var(--color-white);
+}
+
+.dark .tooltip {
+  --c: var(--color-white);
+}

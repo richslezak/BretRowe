@@ -1,0 +1,137 @@
+#themeToggle {
+  font-size: 2em;
+}
+
+.backdrop {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
+  opacity: 0;
+  transition: opacity 0.5s linear, visibility 0s 0.5s;
+}
+
+.backdrop.show {
+  visibility: visible;
+  opacity: 0.5;
+  transition: opacity 0.5s linear, visibility 0s;
+}
+
+.navbar {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .brand {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.nav-links {
+  margin: -0.5em 0;
+}
+
+.nav-links > li:last-child {
+  font-size: 0.8em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.nav-links a:hover {
+  color: var(--color-code);
+}
+
+.nav-links a.active {
+  border-bottom: 1px solid var(--color-code);
+}
+
+/* 767 */
+@media (max-width: 47.938em) {
+  .navbar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    height: 100vh;
+    padding: 1em 2em;
+    margin: 0;
+    border-left: 1px solid var(--color-code);
+    background-color: var(--color-white);
+    list-style: none;
+    font-size: 1em;
+    width: 250px;
+    transition: right 0.5s ease;
+    overflow: hidden;
+    z-index: 9999;
+  }
+
+  .nav-links > li:first-child {
+    text-align: right;
+    padding-right: 1em;
+  }
+
+  .nav-links > li:last-child {
+    padding: 1em 0 0 0.7em;
+  }
+
+  .nav-links.expanded {
+    right: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1em;
+  }
+
+  .nav-links a.active {
+    color: var(--color-code);
+    border-bottom: none;
+  }
+
+  .nav-toggler {
+    font-size: 2em;
+  }
+
+  .nav-close {
+    font-size: 1.5em;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .navbar .brand {
+    font-size: 1.2em;
+  }
+
+  .nav-links > li {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .nav-links > li:first-child,
+  .nav-toggler {
+    display: none;
+  }
+}
