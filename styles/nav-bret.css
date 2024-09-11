@@ -68,7 +68,7 @@
 
 .top-left .tooltip {
   top: 0;
-  right: 25px;
+  right: 40px;
   border-bottom-right-radius: 0;
   clip-path: polygon(
     100% 0,
@@ -188,7 +188,7 @@
   }
 
   .top-left .tooltip {
-    right: 50px;
+    right: 60px;
   }
 
   .top-right .tooltip {
@@ -225,7 +225,7 @@
   }
 
   .top-left .tooltip {
-    right: 65px;
+    right: 80px;
   }
 
   .top-right .tooltip {
@@ -262,7 +262,7 @@
   }
 
   .top-left .tooltip {
-    right: 100px;
+    right: 110px;
   }
 
   .top-right .tooltip {
