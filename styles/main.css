@@ -34,6 +34,15 @@ h6 {
   font-weight: 600;
 }
 
+a {
+  color: var(--color-code);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-code);
+}
+
 main {
   margin-bottom: 5em;
 }
@@ -175,9 +184,6 @@ footer p {
 
 /* 640px */
 @media (min-width: 40em) {
-  #contact p {
-    margin-right: 3em;
-  }
 }
 
 /* 680px */
@@ -185,6 +191,11 @@ footer p {
   #artist-statement-picture {
     width: 250px;
   }
+
+  #contact {
+    margin-left: 3em;
+  }
+
   footer .flex-row > * {
     width: 50%;
   }
