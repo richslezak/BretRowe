@@ -149,7 +149,7 @@ footer p {
 #contact a {
   color: var(--color-black);
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   line-height: 1.2;
