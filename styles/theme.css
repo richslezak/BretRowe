@@ -19,8 +19,6 @@
 /* Body */
 .dark body {
   background-color: var(--color-black);
-  background-image: url(/img/rebel.png);
-  background-repeat: repeat;
   color: var(--color-white);
 }
 

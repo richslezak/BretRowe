@@ -152,6 +152,9 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  line-height: 1.2;
+  margin-bottom: 2em;
+  font-weight: 600;
 }
 
 #contact a:hover {
@@ -194,6 +197,10 @@ footer p {
 
   #contact {
     margin-left: 3em;
+  }
+
+  #contact a {
+    font-size: 1.3125em;
   }
 
   footer .flex-row > * {

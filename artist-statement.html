@@ -82,7 +82,12 @@
   <main>
     <div class="container">
       <h2 class="title">Artist Statement</h2>
-      <img src="/img/bret-rowe.jpg" alt="Bret Rowe in front of his art Comsmic Girl" id="artist-statement-picture">
+      <picture>
+        <source media="(max-width: 599px)" srcset="/img/bret-rowe-sm.jpg" />
+        <source media="(min-width: 600px)" srcset="/img/bret-rowe.jpg" />
+        <img src="/img/bret-rowe.jpg" alt="Bret Rowe in front of his art Comsmic Girl" id="artist-statement-picture" />
+      </picture>
+      <!-- <img src="/img/bret-rowe.jpg" alt="Bret Rowe in front of his art Comsmic Girl" id="artist-statement-picture"> -->
       <p>Our world is a constantly evolving mass of new information that
         demands unbiased interpretations, whether viewed at present or
         historically. Images, labels, castes, and religiopolitical undercurrents
