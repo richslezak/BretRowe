@@ -165,6 +165,31 @@ footer p {
   margin-right: 0.5em;
 }
 
+.gallery {
+  --gutter-x: 0.5rem;
+  --gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: calc(-1 * var(--gutter-y));
+  margin-right: calc(-0.5 * var(--gutter-x));
+  margin-left: calc(-0.5 * var(--gutter-x));
+}
+
+.gallery > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--gutter-x) * 0.5);
+  padding-left: calc(var(--gutter-x) * 0.5);
+  margin-top: var(--gutter-y);
+}
+
+.gallery .item {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
 /* 400px */
 @media (min-width: 25em) {
   #artist-statement-picture {
@@ -193,6 +218,10 @@ footer p {
 @media (min-width: 42.5em) {
   #artist-statement-picture {
     width: 250px;
+  }
+
+  .gallery .item {
+    width: 25%;
   }
 
   #contact {
