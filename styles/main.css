@@ -165,6 +165,12 @@ footer p {
   margin-right: 0.5em;
 }
 
+.gallery-title {
+  border-bottom: 1px solid var(--color-code);
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+}
+
 .gallery {
   --gutter-x: 0.5rem;
   --gutter-y: 0;
