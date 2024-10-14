@@ -230,6 +230,12 @@ footer p {
     width: 25%;
   }
 
+  .art-books {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   #contact {
     margin-left: 3em;
   }
