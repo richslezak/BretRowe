@@ -141,7 +141,7 @@ footer p {
   border: 5px solid var(--color-gray-medium);
 }
 
-#artist-statement-picture {
+#artist-statement-picture img {
   margin: 0.5em 0 2em;
   border: 5px solid var(--color-gray-medium);
 }
@@ -196,23 +196,32 @@ footer p {
   width: 50%;
 }
 
+.art-books {
+  text-align: center;
+}
+
+.art-books .btn {
+  min-width: 175px;
+}
+
 /* 400px */
 @media (min-width: 25em) {
-  #artist-statement-picture {
-    width: 150px;
-    margin: 0.5em 0 3em 3em;
-    float: right;
-  }
-
-  #artist-statement-picture ~ p:nth-of-type(-n + 3) {
-    text-align: justify;
-  }
 }
 
 /* 480px */
 @media (min-width: 30em) {
   .title {
     letter-spacing: 0.6em;
+  }
+
+  #artist-statement-picture img {
+    width: 150px;
+    margin: 0.5em 0 3em 3em;
+    float: right;
+  }
+
+  #artist-statement-picture ~ p:nth-of-type(-n + 1) {
+    text-align: justify;
   }
 }
 
@@ -222,8 +231,12 @@ footer p {
 
 /* 680px */
 @media (min-width: 42.5em) {
-  #artist-statement-picture {
+  #artist-statement-picture img {
     width: 250px;
+  }
+
+  #artist-statement-picture ~ p:nth-of-type(-n + 2) {
+    text-align: justify;
   }
 
   .gallery .item {
@@ -281,8 +294,12 @@ footer p {
     text-align: justify;
   }
 
-  #artist-statement-picture {
+  #artist-statement-picture img {
     width: 300px;
+  }
+
+  #artist-statement-picture ~ p:nth-of-type(-n + 3) {
+    text-align: justify;
   }
 }
 
@@ -290,6 +307,10 @@ footer p {
 @media (min-width: 60em) {
   #bio-video {
     width: 450px;
+  }
+
+  #artist-statement-picture ~ p:nth-of-type(-n + 4) {
+    text-align: justify;
   }
 }
 
