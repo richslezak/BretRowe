@@ -1,4 +1,8 @@
 /* Four square navigation on home page  */
+@font-face {
+  font-family: CCSmash;
+  src: url(/fonts/CCSmash-Regular.woff2) format('woff2');
+}
 .nav-bret {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,7 +20,7 @@
   background-repeat: no-repeat;
   background-size: 110px;
   text-decoration: none;
-  font-family: var(--font-comic-neue);
+  font-family: CCSmash;
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
@@ -101,7 +105,7 @@
 
 .top-right .tooltip {
   top: 0;
-  left: 70px;
+  left: 60px;
   border-bottom-left-radius: 0;
   clip-path: polygon(
     0 0,
@@ -229,7 +233,7 @@
   }
 
   .top-right .tooltip {
-    left: 120px;
+    left: 100px;
   }
 
   .bottom-left .tooltip {
@@ -237,7 +241,7 @@
   }
 
   .bottom-right .tooltip {
-    left: 80px;
+    left: 65px;
   }
 }
 
@@ -266,7 +270,7 @@
   }
 
   .top-right .tooltip {
-    left: 160px;
+    left: 150px;
   }
 
   .bottom-left .tooltip {
@@ -274,7 +278,7 @@
   }
 
   .bottom-right .tooltip {
-    left: 110px;
+    left: 90px;
   }
 }
 
@@ -315,7 +319,7 @@
   .bottom-right .tooltip {
     left: 250px;
     bottom: 110px;
-    width: 160px;
+    width: 170px;
   }
 }
 
